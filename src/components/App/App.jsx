@@ -8,7 +8,7 @@ const api = createAPI();
 
 const App = ({increase, data}) => {
     const redirect = () => {
-        fetch(`https://api.instagram.com/oauth/authorize?client_id=1576420319199590&redirect_uri=https://github.com/VolokhovOleg/&scope=user_profile,user_media&response_type=code/`)
+        fetch(`https://api.instagram.com/oauth/authorize?client_id=1576420319199590&redirect_uri=https://volokhovoleg.github.io/&scope=user_profile,user_media&response_type=code/`)
             .then((response) => {
                 console.log(response);
                 window.open(response.url);
